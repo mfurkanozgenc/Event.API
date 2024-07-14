@@ -1,6 +1,6 @@
 ﻿namespace Event.Domain.Comman
 {
-    public class BaseEntity
+    public class BaseEntity : IBaseEntity
     {
         public Guid Id { get; set; }
         public DateTime CreatedDate { get; set; }

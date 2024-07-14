@@ -4,11 +4,11 @@ namespace Event.Domain.Entities
 {
     public class User : BaseEntity
     {
-        public required string FirstName { get; set; }
-        public required string LastName { get; set; }
-        public required string PhoneNumber { get; set; }
-        public required string IdentificationNumber { get; set; }
-        public required int Gender { get; set; }
+        public  string FirstName { get; set; }
+        public  string LastName { get; set; }
+        public  string? PhoneNumber { get; set; }
+        public  string? IdentificationNumber { get; set; }
+        public  int? Gender { get; set; }
         public ICollection<Activity>? Events { get; set; }
     }
 }
